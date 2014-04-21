@@ -28,6 +28,16 @@
     .hanging>span.glyphicon { position:relative; left: -1em; }
 	.toolbar { margin-left: 1em; color: #808080; }
 	.label a { color: #ffffff; }
+	footer  {
+		background-color: #222222;
+		color: #AAA;
+	}
+	
+	footer a { color: #AAA; }
+	footer a:hover { color: #AAA; }
+	
+	body {	background-color: #222222; }
+	
   </style>
   </head>
 <body id="index">
@@ -42,7 +52,7 @@
           </button>
           <a class="navbar-brand" href="./index.html"><strong>Lobbycloud</strong></a>
           <ul class="nav navbar-nav">
-            <li><a href="#">Upload</a></li>
+            <li><a href="upload-view.html">Upload</a></li>
 			<li><a href="#">Research</a></li>
             <li><a href="#">Engage</a></li>
           </ul>
@@ -68,7 +78,7 @@
 				<div class="well" style="text-align:center">
 					<h3><span class="glyphicon glyphicon-file" style="font-size: 120%; top: 0.2em; margin-right: 0.5em;" ></span><span class="badge" style="font-size: 100%">1.345</span></h3>
 					<p>pages uploaded</p>
-					<p><a class="btn btn-danger" href="#" role="button">Add Document</a></p>
+					<p><a class="btn btn-danger" href="upload-view.html" role="button">Add Document</a></p>
 				</div>
 			</div> 
 		</div>
@@ -166,7 +176,7 @@ or to refrain from linking it to a natural person.</span></i></p>
         <div class="col-md-4">
           <h2><span class="glyphicon glyphicon-cloud-upload" style="top: 0.2em; margin-right: 0.5em;" ></span>Upload</h2>
           <p>Just send us your documents via Email or anonymous upload, and add #categories in the subject line. We'll add them to our repository and them linkable, searchable, cross-referenceable and commentable.</p>
-          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+          <p><a class="btn btn-default" href="upload-view.html" role="button">Details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2><span class="glyphicon glyphicon-filter" style="top: 0.2em; margin-right: 0.5em;" ></span> Research</h2>
@@ -179,19 +189,23 @@ or to refrain from linking it to a natural person.</span></i></p>
           <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
         </div>
       </div>
+</div>
 
-      <hr>
-      <footer>
-        <p>&copy; OpenDataCity 2014</p>
-      </footer>
-    </div> <!-- /container -->
-  	<!-- Bootstrap core JavaScript
+  	<footer><!-- template -->
+		<div class="container">
+		<div class="row">
+				<p>&copy; <a href="http://opendatacity.de">OpenDataCity</a> 2014</p>
+        </div>
+        </div>
+     </footer>
+  
+	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- script src="./js/jquery-1.7.2.min.js"></script -->
     <script src="./js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
+       <script>
 		$('#tabs-main a').click(function (e) {
 			e.preventDefault()
 			$(this).tab('show')
@@ -200,5 +214,5 @@ or to refrain from linking it to a natural person.</span></i></p>
 			$("[rel=popover]").popover({ html: true}).popover("show");
 		});
 	</script>
-  </body>
+</body>
 </html>

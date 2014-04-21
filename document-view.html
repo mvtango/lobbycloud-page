@@ -28,6 +28,16 @@
     .hanging>span.glyphicon { position:relative; left: -1em; }
 	.toolbar { margin-left: 1em; color: #808080; }
 	.label a { color: #ffffff; }
+	footer  {
+		background-color: #222222;
+		color: #AAA;
+	}
+	
+	footer a { color: #AAA; }
+	footer a:hover { color: #AAA; }
+	
+	body {	background-color: #222222; }
+	
   </style>
   </head>
 <body id="document-view">
@@ -42,7 +52,7 @@
           </button>
           <a class="navbar-brand" href="./index.html"><strong>Lobbycloud</strong></a>
           <ul class="nav navbar-nav">
-            <li><a href="#">Upload</a></li>
+            <li><a href="upload-view.html">Upload</a></li>
 			<li><a href="#">Research</a></li>
             <li><a href="#">Engage</a></li>
           </ul>
@@ -57,7 +67,7 @@
       </div>
     </div>
       <div class="jumbotron" >
-      <div class="container" style="padding-top: 1em; background-color: #ffffff;"">
+      <div class="container" style="padding-top: 1em; background-color: #ffffff;">
 		<div class="row">
 			<div class="col-md-8">
 				<h1>Draft DIGITALEUROPE amendments </h1>
@@ -66,17 +76,17 @@
 				<div class="well" style="">
 					<p>
 						<span class="label label-default"><span class="glyphicon glyphicon-share" style="font-size: 100%; top: 0.2em; margin-right: 0.5em;"></span>share / embed</span><br/>
-						<span class="label label-danger"><span class="glyphicon glyphicon-plus-sign" style="font-size: 100%; top: 0.2em; margin-right: 0.5em;" ></span>start new discussion</span><br />
 					    <span class="label label-default"><span class="glyphicon glyphicon-download" style="font-size: 100%; top: 0.2em; margin-right: 0.5em;" ></span>download</span><br />
-					    <span class="label label-info">#IMCO</span> <span class="label label-warning">#ITRE</span> <span class="label label-default"><span class="glyphicon glyphicon-plus-sign" style="font-size: 100%; top: 0.2em; margin-right: 0.5em;" ></span>Add Tag</span>
+					    <span class="label label-info">#IMCO</span> <span class="label label-warning">#ITRE</span> <span class="label label-default"><span class="glyphicon glyphicon-plus-sign" style="font-size: 100%; top: 0.2em; margin-right: 0.5em;" ></span>Add Tag</span><br />
+						<span class="glyphicon glyphicon-fire" style="font-size: 120%; top: 0.2em; margin-right: 0.5em;" ></span>2 discussions <span class="label label-danger"><span class="glyphicon glyphicon-plus-sign" style="font-size: 100%; top: 0.2em; margin-right: 0.5em;" ></span>start new</span><br />
 					</p>
 					<p><span class="secondary">
 						<span class="glyphicon glyphicon-time" style="font-size: 120%; top: 0.2em; margin-right: 0.5em;"></span>uploaded 4 weeks ago<br/>
 						<span class="glyphicon glyphicon-file" style="font-size: 120%; top: 0.2em; margin-right: 0.5em;" ></span>45 pages<br />
-					    <span class="glyphicon glyphicon-fire" style="font-size: 120%; top: 0.2em; margin-right: 0.5em;" ></span>2 discussions<br />
-					</span></p>
-					
-				</div>
+				    </span></p>
+				    <p>
+					</p>
+	     		</div>
 			</div> 
 		</div>
 		<div class="row">
@@ -166,27 +176,24 @@ further incentivised.</p>
       </div>
     </div>
  
-      <hr>
-
-      <footer>
-        <p>&copy; OpenDataCity 2014</p>
-      </footer>
-    </div> <!-- /container -->
-
-  	<!-- Bootstrap core JavaScript
+  	<footer><!-- template -->
+		<div class="container">
+		<div class="row">
+				<p>&copy; <a href="http://opendatacity.de">OpenDataCity</a> 2014</p>
+        </div>
+        </div>
+     </footer>
+  
+	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- script src="./js/jquery-1.7.2.min.js"></script -->
     <script src="./js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-		$('#tabs-main a').click(function (e) {
-			e.preventDefault()
-			$(this).tab('show')
-		})
-		$('a[data-toggle=tab]').on('shown.bs.tab',function(event) {
-			$("[rel=popover]").popover({ html: true}).popover("show");
-		});
-	</script>
-  </body>
+   <script>
+ $(document).ready(function(e) {
+	$("[rel=popover]").popover({ html: true }).popover("show"); 
+ });
+</script>
+</body>
 </html>
