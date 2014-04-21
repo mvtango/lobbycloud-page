@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- generated with hyde -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+      <title>{% block title %}{{ resource.meta.title }}{% endblock %}</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  <style>
+    .secondary { font-size: 80%; color: #808080; }
+    
+    .popover { max-width: 500px; width: 380px; } 
+    .hanging { margin-left: 1em; }
+    .hanging>span.glyphicon { position:relative; left: -1em; }
+	.toolbar { margin-left: 1em; color: #808080; }
+	.label a { color: #ffffff; }
+  </style>
+  </head>
+<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}">
+  {% include "navigation.j2.html" %}
+  {% block content %}  
+  {% endblock content%}
+  {% block js %}
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- script src="./js/jquery-1.7.2.min.js"></script -->
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+		$('#tabs-main a').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+		})
+		$('a[data-toggle=tab]').on('shown.bs.tab',function(event) {
+			$("[rel=popover]").popover({ html: true}).popover("show");
+		});
+	</script>
+  {% endblock js %}
+</body>
+</html>
