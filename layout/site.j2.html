@@ -28,28 +28,39 @@
     .hanging>span.glyphicon { position:relative; left: -1em; }
 	.toolbar { margin-left: 1em; color: #808080; }
 	.label a { color: #ffffff; }
+	footer  {
+		background-color: #222222;
+		color: #AAA;
+	}
+	
+	footer a { color: #AAA; }
+	footer a:hover { color: #AAA; }
+	
+	body {	background-color: #222222; }
+	
   </style>
   </head>
 <body id="{{ resource.meta.id if resource.meta.id else resource.slug }}">
   {% include "navigation.j2.html" %}
   {% block content %}  
   {% endblock content%}
-  {% block js %}
+  {% block footer %}
+	<footer><!-- template -->
+		<div class="container">
+		<div class="row">
+				<p>&copy; <a href="http://opendatacity.de">OpenDataCity</a> 2014</p>
+        </div>
+        </div>
+     </footer>
+  {% endblock %}
+
 	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- script src="./js/jquery-1.7.2.min.js"></script -->
     <script src="./js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-		$('#tabs-main a').click(function (e) {
-			e.preventDefault()
-			$(this).tab('show')
-		})
-		$('a[data-toggle=tab]').on('shown.bs.tab',function(event) {
-			$("[rel=popover]").popover({ html: true}).popover("show");
-		});
-	</script>
-  {% endblock js %}
+   {% block js %}
+   {% endblock js %}
 </body>
 </html>
