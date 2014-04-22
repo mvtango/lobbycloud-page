@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><!-- generated with hyde -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lobbycloud</title>
+      <title>Lobbycloud - Upload</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="css/jumbotron.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,12 +28,20 @@
     .hanging>span.glyphicon { position:relative; left: -1em; }
 	.toolbar { margin-left: 1em; color: #808080; }
 	.label a { color: #ffffff; }
+	footer  {
+		background-color: #222222;
+		color: #AAA;
+	}
+	
+	footer a { color: #AAA; }
+	footer a:hover { color: #AAA; }
+	
+	body {	background-color: #222222; }
+	
   </style>
   </head>
-
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<body id="upload-view">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,8 +52,8 @@
           </button>
           <a class="navbar-brand" href="./index.html"><strong>Lobbycloud</strong></a>
           <ul class="nav navbar-nav">
-            <li><a href="#">Upload</a></li>
-			<li><a href="#">Research</a></li>
+            <li><a href="upload-view.html">Upload</a></li>
+			<li><a href="search-view.html">Research</a></li>
             <li><a href="#">Engage</a></li>
           </ul>
         </div>
@@ -58,153 +66,123 @@
         </div><!--/.navbar-collapse -->
       </div>
     </div>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-		<div class="row">
-			<div class="col-md-9">
-				<h1><span class="glyphicon glyphicon-cloud" style="top: 0.2em; margin-right: 0.5em;" ></span>Lobbycloud</h1>
-				<p>Library of influences on public policy.</p>
-			</div>
-			<div class="col-md-3">
-				<div class="well" style="text-align:center">
-					<h3><span class="glyphicon glyphicon-file" style="font-size: 120%; top: 0.2em; margin-right: 0.5em;" ></span><span class="badge" style="font-size: 100%">1.345</span></h3>
-					<p>pages uploaded</p>
-					<p><a class="btn btn-danger" href="#" role="button">Add Document</a></p>
-				</div>
-			</div> 
-		</div>
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+   <div class="jumbotron" >
+      <div class="container" style="padding-top: 1em; background-color: #ffffff;">
 		<div class="row">
 			<div class="col-md-12">
-				<ul id="tabs-main" class="nav nav-tabs">
-					<li class="active"><a href="#just" data-toggle="tab"><span class="glyphicon glyphicon-time" style="top: 0.2em; margin-right: 0.5em;"></span>Just in</a></li>
-					<li class="inactive"><a href="#most" data-toggle="tab"><span class="glyphicon glyphicon-fire" style="top: 0.2em; margin-right: 0.5em;"></span>Hotly debated</a></li>
-				</ul>
-				<div class="tab-content">
-					<div id="just" class="active tab-pane"><!-- just in -->
-						<ul class="list-group">
-								<li class="list-group-item"><a href="./document-view.html">Stellungnahme der Deutschen Gesellschaft für Recht und Informatik </a> <span class="secondary"> 3 days ago, 45 Pages <span class="badge" style="background-color: #D9534F;">2 discussions</span></span> <span class="pull-right"><span class="label label-success">#JURI</span> <span class="label label-warning">#ITRE</span></span></li>
-								<li class="list-group-item"><a href="./document-view.html">BT’s amendments to the proposed General Data Protection Regulation </a> <span class="secondary">6 days ago, 12 Pages <span class="badge" style="background-color: #D9534F;">1 discussion</span></span>  <span class="pull-right"><span class="label label-info">#IMCO</span> </span></li>
-								<li class="list-group-item"><a href="./document-view.html">Draft DIGITALEUROPE amendments </a>  <span class="secondary">2 weeks ago, 125 Pages</span> <span class="pull-right"><span class="label label-success">#JURI</span> <span class="label label-warning">#ITRE</span></span></li>
-								<li class="list-group-item"><a href="#">LQDN Position Paper on Net Neutrality</a> <span class="secondary">5 months ago, 45 Pages <span class="badge" style="background-color: #D9534F;">45 discussions</span></span>  <span class="pull-right"><span class="label label-info">#IMCO</span> <span class="label label-warning">#ITRE</span></span></li>
-								<li class="list-group-item"><a class="btn btn-default" href="#">more ...</a></li>
-						</ul>
+				<h1><span class="glyphicon glyphicon-cloud-upload"></span> Upload Lobby Document</h1>
+				<div >
+				<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-10">
+					<h2>After uploading &hellip;</h2>
+					<p>&hellip; the text of your document will be publically accessible and embeddable
+					</p>
+					<p>
+					 &hellip; the text will be indexed by search engines like Google and Bing
+					</p>
+					<p>&hellip; you may highlight, comment, link, discuss and embed parts of the document
+					</p>
+					<p></p>
+				</div>
+				<div class="col-md-1">
+				</div>
+				
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
 					</div>
-					<div id="most" class="tab-pane"><!-- hotly debated -->
-						<ul class="list-group">
-								<li class="list-group-item">
-									<div class="row">
-									  <div class="col-md-12">
-									  <div class="well" style="background: transparent; border: 0px;">
-									  <h2><b>DIGITALEUROPE Comments on Proposed European Commission's Regulation</b><small>
-									  <span class="pull-right">
-										  <span class="label label-default"><a href="./document-view.html">Open Document</a></span> 										  <span class="label label-success">#JURI</span> <span class="label label-warning">#ITRE</span>
-									  </span>
+				</div>
+				<form>				
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-2"> 
+						<a class="btn btn-default btn-lg" href="upload-view.html" role="button"><span class="glyphicon glyphicon-folder-open"></span> Choose File</a>
+                    </div>
+                    <div class="col-md-6">				
+					<p class="secondary">
+					Lobbycloud can process Word, PDF, OpenOffice, PowerPoint or Excel Files. Max. Size is 600MB. If you have bigger files or other document types, please <a href="#">contact us directly</a>.
+					</p>
 
-									  </small></h2>
-									  </div>
-									  </div>
-									</div>									
-									<div class="row">
-										<div class="col-md-8">
-										<div class="well"><p rel="popover"  data-content="<p><span class='label label-danger'>5 new postings</span> </p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #e0e0e0;' &gt;&lt;/span&gt;<b>jogrem:</b> Exactly what they tried to avoid some weeks ago.</p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #e0e000;' &gt;&lt;/span&gt;<b>nabor:</b> Let's use it as our argument.</p><p class='toolbar' ><span class='label label-default'>&lt;span class='glyphicon glyphicon-share'&gt;&lt;/span&gt; share / embed</span><span class='label label-default'>&lt;span class='glyphicon glyphicon-plus-sign'&gt;&lt;/span&gt;comment</span><span class='label label-default'>more&lt;span class='glyphicon glyphicon-chevron-right'&gt;&lt;/span&gt;</span></p>" data-placement="right" style="font-size: 140%"><i>
-											Furthermore it should be made clear that <span style="background-color: #e0e000;">the
-theoretical possibility to identify an individual is in itself</span> not sufficient for considering an
-individual as identifiable.</i></p>
-										<p style="font-size: 140%"><i>First of all, we support the European Commission’s goal of
-enhancing the single market by &hellip;</i></p>
-										<p><span class="pull-right secondary">Page 19 of 63</span><br/></p>
-										
-										</div>
-										</div>
-										<div class="col-md-4">
-										</div>
-									 </div>
-								</li>
-								<li class="list-group-item">
-									<div class="row">
-									  <div class="col-md-12">
-									  <div class="well" style="background: transparent; border: 0px;">
-									  <h2><b>BT’s amendments to the proposed General Data Protection Regulation</b><small>
-									  <span class="pull-right">
-										  <span class="label label-default"><a href="./document-view.html">Open Document</a></span> 										  <span class="label label-info">#IMCO</span> <span class="label label-warning">#ITRE</span>
-									  </span>
+					</div>
+				</div>
 
-									  </small></h2>
-									  </div>
-									  </div>
-									</div>									
-									<div class="row">
-										<div class="col-md-8">
-										<div class="well">
-											
-										<p style="font-size: 140%"><i>&hellip; harmonisation on data protection rules across the
-27 Member States.</i></p>
-										<p rel="popover"  data-content="<p><span class='label label-danger'>3 new postings</span> </p><p class='hanging'>&lt;span class='glyphicon glyphicon-user'&gt;&lt;/span&gt;<b>norman:</b> Not their idea.</p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #800080;' &gt;&lt;/span&gt;<b>belgum:</b> Repetition makes it more plausible ;-)</p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #009090;' &gt;&lt;/span&gt;<b>sorgan:</b>Found it <a href='#'>here</a> as well.</p><p class='toolbar' ><span class='label label-default'>&lt;span class='glyphicon glyphicon-share'&gt;&lt;/span&gt; share / embed</span><span class='label label-default'>&lt;span class='glyphicon glyphicon-plus-sign'&gt;&lt;/span&gt;comment</span><span class='label label-default'>more&lt;span class='glyphicon glyphicon-chevron-right'&gt;&lt;/span&gt;</span></p>" data-placement="right" style="font-size: 140%"><i> An overly broad definition of ‘data subject’ encompassing those
-identifiers (such as serial numbers etc.) which are not connected to a natural person does not
-lead to a better protection; <span style="background-color: #e0e000;">on the contrary it takes away incentives to make data anonymous
-or to refrain from linking it to a natural person.</span></i></p>
-										<p><span class="pull-right secondary">Page 4 of 45</span><br/></p>
-										</div>
-										</div>
-										<div class="col-md-4">
-										</div>
-									 </div>
-								</li>
+				<div class="row"> 
+					<div class="col-md-2"></div>
+					<div class="col-md-4" style="text-align: left">
+					   <input class="form-control input-lg" type="text" placeholder="Add some tags!">
+					</div>
+					<div class="col-md-4">
+					   <p class="secondary">Tags  collect documents that have something in common. Committee names, law proposal names and author names are useful tags.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"> </div>
+					<div class="col-md-4">
+					  <input class="form-control input-lg" type="text" placeholder="Name or Alias">
+					   <div class="input-group" style="">
+							<input class="form-control input-lg" type="text" placeholder="Your contact E-Mail">
+							<span class="input-group-addon">
+							<input type="checkbox" >make me<br />anonymous 
+							</span>
+					   </div>
+					</div>
+					<div class="col-md-4">
+					   <p class="secondary">
+					   Contact E-Mail will only recieve messages from Lobbycloud relating to Lobbycloud. <br/><br />
+					   We encourage you to use your real name.
+					   </p>
+					</div>
+				</div>			
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8"> 
+					   <p class="secondary" style="margin-top: 0.7em">
+					   If you check the "make me anonymous" checkbox, your name or alias will never appear on this website. There may be other ways of discovering your identity, so if you want your submission to be really hard to trace, please consider taking additional measures as detailed <a href="#">in this FAQ</a>.  
+					   </p>
+					   
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+				    <div class="col-md-8">
+					  <p><span class="pull-right">
+					  <a class="btn btn-danger btn-lg" href="upload-view.html" role="button">Start Upload</a>
+					  </span></p>
+					  <br/>
+					  <br/>
+					</div>
+				</div>
+				</form>
 
-						</ul>    
- 					</div>
 
 				</div>
 			</div>
+		</div>
+	  </div>
+   </div>
 		
+  	<footer><!-- template -->
+		<div class="container">
+		<div class="row">
+				<p>&copy; <a href="http://opendatacity.de">OpenDataCity</a> 2014</p>
         </div>
-      </div>
-    </div>
- 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2><span class="glyphicon glyphicon-cloud-upload" style="top: 0.2em; margin-right: 0.5em;" ></span>Upload</h2>
-          <p>Just send us your documents via Email or anonymous upload, and add #categories in the subject line. We'll add them to our repository and them linkable, searchable, cross-referenceable and commentable.</p>
-          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
         </div>
-        <div class="col-md-4">
-          <h2><span class="glyphicon glyphicon-filter" style="top: 0.2em; margin-right: 0.5em;" ></span> Research</h2>
-          <p>Whose words are they using? Where do positions overlap? Which arguments are  based on the same set of underlying facts? Navigate the deluge of position papers, proposals and white papers.</p>
-          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2><span class="glyphicon glyphicon-fire" style="top: 0.2em; margin-right: 0.5em;" ></span> Engage</h2>
-          <p>Pinpoint key interests and stakeholders, drag backroom positions out to the light and kick-start public debate, encouraging drowned-out voices to be heard by starting social feedback loops. </p>
-          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; OpenDataCity 2014</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
+     </footer>
+  
+	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- script src="./js/jquery-1.7.2.min.js"></script -->
     <script src="./js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-		$('#tabs-main a').click(function (e) {
-			e.preventDefault()
-			$(this).tab('show')
-		})
-		$('a[data-toggle=tab]').on('shown.bs.tab',function(event) {
-			$("[rel=popover]").popover({ html: true}).popover("show");
-		});
-	    </script>
-  </body>
+   <script src="js/bootstrap-filestyle.js"></script>
+<script>
+$(":file").filestyle();b
+</body>
 </html>

@@ -28,6 +28,16 @@
     .hanging>span.glyphicon { position:relative; left: -1em; }
 	.toolbar { margin-left: 1em; color: #808080; }
 	.label a { color: #ffffff; }
+	footer  {
+		background-color: #222222;
+		color: #AAA;
+	}
+	
+	footer a { color: #AAA; }
+	footer a:hover { color: #AAA; }
+	
+	body {	background-color: #222222; }
+	
   </style>
   </head>
 <body id="index">
@@ -42,8 +52,8 @@
           </button>
           <a class="navbar-brand" href="./index.html"><strong>Lobbycloud</strong></a>
           <ul class="nav navbar-nav">
-            <li><a href="#">Upload</a></li>
-			<li><a href="#">Research</a></li>
+            <li><a href="upload-view.html">Upload</a></li>
+			<li><a href="search-view.html">Research</a></li>
             <li><a href="#">Engage</a></li>
           </ul>
         </div>
@@ -68,7 +78,7 @@
 				<div class="well" style="text-align:center">
 					<h3><span class="glyphicon glyphicon-file" style="font-size: 120%; top: 0.2em; margin-right: 0.5em;" ></span><span class="badge" style="font-size: 100%">1.345</span></h3>
 					<p>pages uploaded</p>
-					<p><a class="btn btn-danger" href="#" role="button">Add Document</a></p>
+					<p><a class="btn btn-danger" href="upload-view.html" role="button">Add Document</a></p>
 				</div>
 			</div> 
 		</div>
@@ -81,7 +91,8 @@
 				<div class="tab-content">
 					<div id="just" class="active tab-pane"><!-- just in -->
 						<ul class="list-group">
-								<li class="list-group-item"><a href="./document-view.html">Stellungnahme der Deutschen Gesellschaft für Recht und Informatik </a> <span class="secondary"> 3 days ago, 45 Pages <span class="badge" style="background-color: #D9534F;">2 discussions</span></span> <span class="pull-right"><span class="label label-success">#JURI</span> <span class="label label-warning">#ITRE</span></span></li>
+								<li class="list-group-item"><a href="./document-view.html">AmCham EU Proposed Amendments on the
+General Data Protection Regulation</a> <span class="secondary"> 3 days ago, 45 Pages <span class="badge" style="background-color: #D9534F;">3 discussions</span></span> <span class="pull-right"><span class="label label-success">#JURI</span> <span class="label label-warning">#ITRE</span></span></li>
 								<li class="list-group-item"><a href="./document-view.html">BT’s amendments to the proposed General Data Protection Regulation </a> <span class="secondary">6 days ago, 12 Pages <span class="badge" style="background-color: #D9534F;">1 discussion</span></span>  <span class="pull-right"><span class="label label-info">#IMCO</span> </span></li>
 								<li class="list-group-item"><a href="./document-view.html">Draft DIGITALEUROPE amendments </a>  <span class="secondary">2 weeks ago, 125 Pages</span> <span class="pull-right"><span class="label label-success">#JURI</span> <span class="label label-warning">#ITRE</span></span></li>
 								<li class="list-group-item"><a href="#">LQDN Position Paper on Net Neutrality</a> <span class="secondary">5 months ago, 45 Pages <span class="badge" style="background-color: #D9534F;">45 discussions</span></span>  <span class="pull-right"><span class="label label-info">#IMCO</span> <span class="label label-warning">#ITRE</span></span></li>
@@ -105,11 +116,11 @@
 									</div>									
 									<div class="row">
 										<div class="col-md-8">
-										<div class="well"><p rel="popover"  data-content="<p><span class='label label-danger'>5 new postings</span> </p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #e0e0e0;' &gt;&lt;/span&gt;<b>jogrem:</b> Exactly what they tried to avoid some weeks ago.</p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #e0e000;' &gt;&lt;/span&gt;<b>nabor:</b> Let's use it as our argument.</p><p class='toolbar' ><span class='label label-default'>&lt;span class='glyphicon glyphicon-share'&gt;&lt;/span&gt; share / embed</span><span class='label label-default'>&lt;span class='glyphicon glyphicon-plus-sign'&gt;&lt;/span&gt;comment</span><span class='label label-default'>more&lt;span class='glyphicon glyphicon-chevron-right'&gt;&lt;/span&gt;</span></p>" data-placement="right" style="font-size: 140%"><i>
+										<div class="well"><p rel="popover"  data-content="<p><span class='label label-danger'>5 new postings</span> </p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #e0e0e0;' &gt;&lt;/span&gt;<b>jogrem:</b> Exactly what they tried to avoid some weeks ago.</p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #e0e000;' &gt;&lt;/span&gt;<b>nabor:</b> Let's use it as our argument.</p><p class='toolbar' ><span class='label label-default'>&lt;span class='glyphicon glyphicon-share'&gt;&lt;/span&gt; share / embed</span><span class='label label-default'>&lt;span class='glyphicon glyphicon-plus-sign'&gt;&lt;/span&gt;comment</span><span class='label label-default'>more&lt;span class='glyphicon glyphicon-chevron-right'&gt;&lt;/span&gt;</span></p>" data-placement="right" class="doc-p" ><i>
 											Furthermore it should be made clear that <span style="background-color: #e0e000;">the
 theoretical possibility to identify an individual is in itself</span> not sufficient for considering an
 individual as identifiable.</i></p>
-										<p style="font-size: 140%"><i>First of all, we support the European Commission’s goal of
+										<p class="doc-p" ><i>First of all, we support the European Commission’s goal of
 enhancing the single market by &hellip;</i></p>
 										<p><span class="pull-right secondary">Page 19 of 63</span><br/></p>
 										
@@ -136,9 +147,9 @@ enhancing the single market by &hellip;</i></p>
 										<div class="col-md-8">
 										<div class="well">
 											
-										<p style="font-size: 140%"><i>&hellip; harmonisation on data protection rules across the
+										<p class="doc-p" ><i>&hellip; harmonisation on data protection rules across the
 27 Member States.</i></p>
-										<p rel="popover"  data-content="<p><span class='label label-danger'>3 new postings</span> </p><p class='hanging'>&lt;span class='glyphicon glyphicon-user'&gt;&lt;/span&gt;<b>norman:</b> Not their idea.</p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #800080;' &gt;&lt;/span&gt;<b>belgum:</b> Repetition makes it more plausible ;-)</p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #009090;' &gt;&lt;/span&gt;<b>sorgan:</b>Found it <a href='#'>here</a> as well.</p><p class='toolbar' ><span class='label label-default'>&lt;span class='glyphicon glyphicon-share'&gt;&lt;/span&gt; share / embed</span><span class='label label-default'>&lt;span class='glyphicon glyphicon-plus-sign'&gt;&lt;/span&gt;comment</span><span class='label label-default'>more&lt;span class='glyphicon glyphicon-chevron-right'&gt;&lt;/span&gt;</span></p>" data-placement="right" style="font-size: 140%"><i> An overly broad definition of ‘data subject’ encompassing those
+										<p rel="popover"  data-content="<p><span class='label label-danger'>3 new postings</span> </p><p class='hanging'>&lt;span class='glyphicon glyphicon-user'&gt;&lt;/span&gt;<b>norman:</b> Not their idea.</p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #800080;' &gt;&lt;/span&gt;<b>belgum:</b> Repetition makes it more plausible ;-)</p><p class='hanging'>&lt;span class='glyphicon glyphicon-user' style='color: #009090;' &gt;&lt;/span&gt;<b>sorgan:</b>Found it <a href='#'>here</a> as well.</p><p class='toolbar' ><span class='label label-default'>&lt;span class='glyphicon glyphicon-share'&gt;&lt;/span&gt; share / embed</span><span class='label label-default'>&lt;span class='glyphicon glyphicon-plus-sign'&gt;&lt;/span&gt;comment</span><span class='label label-default'>more&lt;span class='glyphicon glyphicon-chevron-right'&gt;&lt;/span&gt;</span></p>" data-placement="right" class="doc-p" ><i> An overly broad definition of ‘data subject’ encompassing those
 identifiers (such as serial numbers etc.) which are not connected to a natural person does not
 lead to a better protection; <span style="background-color: #e0e000;">on the contrary it takes away incentives to make data anonymous
 or to refrain from linking it to a natural person.</span></i></p>
@@ -158,20 +169,20 @@ or to refrain from linking it to a natural person.</span></i></p>
 		
         </div>
       </div>
-    </div>
+  
  
-    <div class="container">
+    <div class="container" style="background-color: #ffffff">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
           <h2><span class="glyphicon glyphicon-cloud-upload" style="top: 0.2em; margin-right: 0.5em;" ></span>Upload</h2>
-          <p>Just send us your documents via Email or anonymous upload, and add #categories in the subject line. We'll add them to our repository and them linkable, searchable, cross-referenceable and commentable.</p>
-          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+          <p>Just send us your documents via Email or anonymous upload, and add #tags in the subject line. We'll add them to our repository and them linkable, searchable, cross-referenceable and commentable.</p>
+          <p><a class="btn btn-default" href="upload-view.html" role="button">Details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2><span class="glyphicon glyphicon-filter" style="top: 0.2em; margin-right: 0.5em;" ></span> Research</h2>
           <p>Whose words are they using? Where do positions overlap? Which arguments are  based on the same set of underlying facts? Navigate the deluge of position papers, proposals and white papers.</p>
-          <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
+          <p><a class="btn btn-default" href="search-view.html" role="button">Details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2><span class="glyphicon glyphicon-fire" style="top: 0.2em; margin-right: 0.5em;" ></span> Engage</h2>
@@ -179,19 +190,24 @@ or to refrain from linking it to a natural person.</span></i></p>
           <p><a class="btn btn-default" href="#" role="button">Details &raquo;</a></p>
         </div>
       </div>
+        </div> <!-- Jumbotron -->
+</div>
 
-      <hr>
-      <footer>
-        <p>&copy; OpenDataCity 2014</p>
-      </footer>
-    </div> <!-- /container -->
-  	<!-- Bootstrap core JavaScript
+  	<footer><!-- template -->
+		<div class="container">
+		<div class="row">
+				<p>&copy; <a href="http://opendatacity.de">OpenDataCity</a> 2014</p>
+        </div>
+        </div>
+     </footer>
+  
+	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- script src="./js/jquery-1.7.2.min.js"></script -->
     <script src="./js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
+       <script>
 		$('#tabs-main a').click(function (e) {
 			e.preventDefault()
 			$(this).tab('show')
@@ -200,5 +216,5 @@ or to refrain from linking it to a natural person.</span></i></p>
 			$("[rel=popover]").popover({ html: true}).popover("show");
 		});
 	</script>
-  </body>
+</body>
 </html>
